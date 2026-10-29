@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Course Home Page - Ezequiel Nicolidakis</title>
+    <meta
+      name="description"
+      content="WDD 231 Course Home Page for Ezequiel Nicolidakis showcasing web development projects, assignments, and dynamic course certification lists."
+    />
+    <meta name="author" content="Ezequiel Nicolidakis" />
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/courses.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-box">
+        <img
+          src="images/logo.svg"
+          alt="Site Logo"
+          class="site-logo"
+          width="32"
+          height="32"
+        />
+        <span class="site-title">Ezequiel Nicolidakis</span>
+      </div>
+      <button id="menu" aria-label="Open Navigation Menu"></button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+
+      <div class="hero-grid">
+        <section class="card about-me">
+          <h2>About Me</h2>
+          <p>
+            I am a Product Support Analyst and Web Development student based in
+            Ciudad de la Costa, Uruguay. I am passionate about technology,
+            custom software configurations, and building clean, accessible, and
+            performant web applications using modern web standards.
+          </p>
+        </section>
+
+        <section class="card student-photo-card">
+          <h2>Student Photo</h2>
+          <picture>
+            <img
+              src="images/profile.webp"
+              alt="Ezequiel Nicolidakis profile photo"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+          </picture>
+        </section>
+      </div>
+
+      <section class="card certificate-section">
+        <h2>Web Certificate Courses</h2>
+        <div class="filter-buttons">
+          <button id="all" class="filter-btn active">All</button>
+          <button id="cse" class="filter-btn">CSE</button>
+          <button id="wdd" class="filter-btn">WDD</button>
+        </div>
+
+        <p id="course-counter" class="course-counter-text"></p>
+
+        <div id="courses-container" class="courses-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img
+            src="images/github.svg"
+            alt="GitHub Profile"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <img
+            src="images/linkedin.svg"
+            alt="LinkedIn Profile"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a
+          href="https://x.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+        >
+          <img src="images/x.svg" alt="X Profile" width="24" height="24" />
+        </a>
+      </div>
+      <p>
+        &copy;<span id="currentyear"></span> | Ezequiel Nicolidakis | Ciudad de
+        la Costa, Uruguay
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
