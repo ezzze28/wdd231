@@ -1,5 +1,5 @@
 const hamburger = document.getElementById("hamburgerChamber");
-const menu = document.querySelector(".toggleMenu");
+const menu = document.querySelector("#modal");
 
 hamburger.addEventListener("click", function () {
   menu.classList.toggle("active");
