@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the directory of business that trust in Atlantida Chamber of Commerce."
+    />
+    <meta name="author" content="Ezequiel Nicolidakis" />
+    <meta property="og:title" content="Atlantida Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:url"
+      content="https://ezzze28.github.io/wdd231/chamber"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/ezzze28/wdd230/main/chamber/images/meta_card.webp"
+    />
+    <meta
+      name="twitter:title"
+      content="Directory - Atlantida Chamber of Commerce"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the Atlantida Chamber of Commerce - your hub for business resources, networking events, and economic growth opportunities in Atlantida, Uruguay."
+    />
+    <meta name="twitter:image" content=" ./images/meta_card.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="./images/chamber-logo.svg"
+      rel="shortcut icon"
+      type="svg/icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/large.css"
+      media="screen and (min-width: 640px)"
+    />
+    <title>Atlantida Chamber Of Commerce | Directory</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/chamber-logo.svg" alt="Atlantida City Logo"
+            /></a>
+          </div>
+        </div>
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="form.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburgerChamber">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="form.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="banner" class="hidden">
+        Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+
+      <div class="menu">
+        <h2 class="section-title">Directory</h2>
+        <button id="grid" class="active"><i class="fas fa-th"></i></button>
+        <button id="list"><i class="fas fa-list-alt"></i></button>
+      </div>
+
+      <div class="grid" id="dataContainer"></div>
+    </main>
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLogoContainer">
+          <div id="footerLogoInfo">
+            <p id="footerTitle">Atlantida : Business Paradise</p>
+            <p>Roger Balet, C1 66</p>
+            <p>Atlantida, Canelones Department</p>
+            <p>info@atlantidachamber.org</p>
+            <p>(+1) 230 228 827</p>
+            <a href="https://maps.app.goo.gl/YKKK3Bu9g6rk7s7G6" target="_blank"
+              ><i class="fas fa-thumbtack"></i> Location Map
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="socialsFooter">
+          <a href="https://www.youtube.com"
+            ><i class="fab fa-youtube-square" id="youtube"></i
+          ></a>
+          <a href="https://www.x.com"><i class="fab fa-X" id="X"></i></a>
+          <a href="https://www.linkedin.com/in/profile"
+            ><i class="fab fa-linkedin" id="linkedIn"></i
+          ></a>
+        </div>
+        <div>
+          <div id="firstLineFooter">
+            <p>WDD 231 Project</p>
+            <p>
+              <a href="https://www.linkedin.com/in/eze-nicolidakis/"
+                >Ezequiel Nicolidakis</a
+              >
+            </p>
+            <p>&copy;<span id="currentYear"></span> Atlantida Chamber</p>
+            <p id="lastMod"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/lazyload.js" defer></script>
+    <script src="./scripts/dates.js" defer></script>
+    <script src="./scripts/nav.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
+  </body>
+</html>

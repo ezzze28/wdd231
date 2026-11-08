@@ -1,0 +1,60 @@
+@media screen and (min-width: 640px) {
+  .headerInfo {
+    height: 90px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mainMenu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .mainMenu li a {
+    color: var(--bg-light);
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-weight: 600;
+  }
+
+  .mainMenu li a:hover {
+    color: var(--accent1);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footerLogoContainer {
+    grid-column: 1 / 2;
+  }
+
+  .socialsFooter {
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+
+  footer hr {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  #firstLineFooter {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
