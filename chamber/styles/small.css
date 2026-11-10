@@ -259,8 +259,14 @@ footer {
 }
 
 footer a {
-  color: var(--accent1);
+  color: var(--bg-light);
   text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: var(--accent1);
+  text-decoration: underline;
 }
 
 footer hr {
